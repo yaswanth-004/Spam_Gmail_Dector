@@ -110,12 +110,6 @@ gmail-spam-scanner/
 - `.gitignore` prevents sensitive files from being pushed
 - Rate limiting to prevent API abuse
 
-### ❌ Never Commit These Files
-
-- `credentials.json` - Gmail API credentials
-- `token.json` - OAuth tokens
-- `.env` - Environment variables with API keys
-- `*.pkl` - AI model files (too large, may contain sensitive data)
 
 ### 🛡️ Recommended Setup
 
