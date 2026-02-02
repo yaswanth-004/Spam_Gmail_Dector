@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from main import (
+from gmail_scanner import (
     get_gmail_service,
     fetch_and_hash_emails,
     ai_model,
