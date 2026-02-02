@@ -38,6 +38,27 @@ pip install -r requirements.txt
    - Enable Gmail API
    - Create OAuth 2.0 credentials (Desktop app)
    - Download credentials and save as `credentials.json` in project root
+   - To create a credentials.json file for the Gmail API, you must generate either an OAuth 2.0 client ID (for user authentication) or a Service Account key in the Google Cloud Console and download the resulting JSON file. 
+Method 1: OAuth 2.0 Client ID (Recommended for most user-facing apps) 
+This method is used when your application needs to access a user's data with their permission. 
+Go to the Google Cloud Console: Open the Google Cloud Console and select your project, or create a new one.
+Enable the Gmail API:
+In the left-side menu, go to APIs & Services > Library.
+Search for "Gmail API", select it, and click Enable.
+Configure the OAuth Consent Screen:
+In the left-side menu, go to APIs & Services > OAuth consent screen.
+Select the user type (e.g., External) and click Create.
+Fill in the required fields, such as the app name and a support email, then click Save and Continue.
+On the Scopes page, you can optionally add the specific Gmail API scopes your application needs. Click Save and Continue.
+Add test users if needed, then go back to the dashboard.
+Create Credentials:
+In the left-side menu, go to APIs & Services > Credentials.
+Click + Create Credentials and select OAuth client ID.
+Select your application type (e.g., Desktop app, Web application, etc.).
+Give the credential a name.
+If you chose "Web application", add the authorized redirect URIs for your application.
+Click Create.
+Download the JSON file: A dialog box will appear with your Client ID and Client Secret. Click the Download JSON button to save the credentials.json file to your computer. 
 
 4. **Configure environment variables**
 ```bash
