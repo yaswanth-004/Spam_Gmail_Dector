@@ -39,9 +39,7 @@ pip install -r requirements.txt
    - Create OAuth 2.0 credentials (Desktop app)
    - Download credentials and save as `credentials.json` in project root
    - To create a credentials.json file for the Gmail API, you must generate either an OAuth 2.0 client ID (for user authentication) or
-   -
    - a Service Account key in the Google Cloud Console and download the resulting JSON file.
-   - 
 Method 1: OAuth 2.0 Client ID (Recommended for most user-facing apps)
 
 This method is used when your application needs to access a user's data with their permission. 
